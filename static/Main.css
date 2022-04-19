@@ -1,0 +1,93 @@
+header{    
+    border-bottom: 1px solid #d9dadc; 
+    width: 100%;
+    padding:  30px 40px;
+    background: #212529;  
+    text-align: center;  
+}    
+header h2{
+    color: #ffffff;
+    padding: 0 9rem; 
+}
+.calculator{
+    border: 1px solid #d9dadc; 
+    padding: 3rem 2rem;
+}
+.alert{
+    padding: 0;
+    text-align: center;
+    margin: 0 0 3rem;
+}
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2em .4ex;
+    text-align: center;
+    padding-left: 1rem;
+}
+.fraction>span {
+    display: block;
+    padding-top: 0.15em;
+}
+.fraction span.bar {
+    display: none;
+}
+.fraction span.fdn {
+    border-top: thin solid #000;
+}
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.result h4,.result h5{
+    padding: 1rem 0;
+}
+
+.formula{
+    border: 1px solid #212529;    
+    margin: auto;      
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.formula .container{
+    margin: 1rem 0 0 ;
+}
+.formula .container .row{
+    justify-content:center;
+} 
+.formula .res{
+    display: flex;
+}
+
+.source{
+    margin: 2rem 0 !important;
+    padding: 0 !important;
+}
+
+footer{
+    border-top: 1px solid #d9dadc;
+    padding: 20px 0;
+}
+
+@media(max-width: 685px) {
+    header h2 {
+      padding: 0 !important;
+      text-align: center !important;
+    }
+    section{
+        padding: 0 1rem !important;
+    }    
+    .formula{
+        display: block !important;
+        padding: 1rem 0 !important;
+    } 
+    .alert p{
+        text-align: justify !important;
+    }
+    .col-9 {        
+        width: 100% !important;
+    } 
+    .col-2{
+        width: 25% !important;
+    }   
+} 
