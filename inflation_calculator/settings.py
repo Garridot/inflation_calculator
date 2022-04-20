@@ -25,7 +25,10 @@ SECRET_KEY = '8d3t5jp#yx4o2xi=i^m7m*rlwhp_e=!jqh%c619k*$lp@=h-nn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 
 # Application definition
@@ -41,6 +44,7 @@ INSTALLED_APPS = [
 
     # Third-Party Apps
     'rest_framework',
+    'corsheaders'
     
 
     # Local Apps
@@ -56,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'inflation_calculator.urls'
