@@ -8,8 +8,10 @@ from .models import *
 
 
 class BaseModelViewSet(ModelViewSet): 
+    
      
-    def get_permissions(self):        
+    def get_permissions(self): 
+        permission_classes = []       
         
         if self.action == 'create':    permission_classes = [IsAdminUser]
 
