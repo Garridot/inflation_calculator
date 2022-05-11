@@ -44,8 +44,7 @@ INSTALLED_APPS = [
 
     # Third-Party Apps
     'rest_framework',
-    "corsheaders",
-    
+    "corsheaders",   
 
     # Local Apps
     'core'
