@@ -37,8 +37,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOW_ALL_ORIGINS = True                         
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_ORIGINS    = [ 'https://inflation-calculator-arg-x4iu.onrender.com/',] 
-CORS_ALLOWED_ORIGIN_REGEXES = [ 'https://inflation-calculator-arg-x4iu.onrender.com/',]
+
+ 
+
 
 
 
@@ -67,7 +68,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -103,20 +104,13 @@ WSGI_APPLICATION = 'inflation_calculator.wsgi.application'
 
 import dj_database_url
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default="postgres://pgqgedoqqcpflk:60a33688dc09083a057001b894012d5505992e300f82b3a05d818f665355f6f8@ec2-54-164-40-66.compute-1.amazonaws.com:5432/dvhet8b5jurph",
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
 
 
 # Password validation

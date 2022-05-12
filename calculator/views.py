@@ -16,12 +16,13 @@ class MainView(TemplateView):
 
     def post(self, request):
         data = json.load(request)['content'] 
+        
 
         
         year1  = Years.objects.get(year=data['start_year'])
         year2  =  Years.objects.get(year=data['end_year'])
 
-        CPI1   = Inflation.objects.get(country=1,year=year1).CPI 
+        CPI1   = Inflation.objects.get(country=1,year=year1).CPI        
         CPI2   = Inflation.objects.get(country=1,year=year2).CPI 
         
         amount = float(data['amount'])

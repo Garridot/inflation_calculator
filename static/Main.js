@@ -60,9 +60,9 @@ function send_data(){
 
    
 
-    var url = 'https://inflation-calculator-arg-x4iu.onrender.com/'
+    
 
-    fetch(url,{mode: 'no-cors'},{                            
+    fetch('https://inflation-calculator-arg-x4iu.onrender.com/',{mode: 'no-cors'},{                            
         method:'POST',
         headers:{
             'Content-Type':'application/json',                
@@ -75,7 +75,7 @@ function send_data(){
     .then((response)=>{       
         
                        
-        return response.json()
+        return response.json();
 
     }) 
 
