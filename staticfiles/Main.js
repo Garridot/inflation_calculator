@@ -23,7 +23,7 @@ function getCookie(name) {
 
 
 function  get_years(){
-    fetch('http://127.0.0.1:8000/api/years/')        
+    fetch('https://inflation-calculator-arg-x4iu.onrender.com/api/years/')        
     .then(response => response.json())
     .then(function(data){
         var list = data         
@@ -60,7 +60,7 @@ function send_data(){
 
    
 
-    var url = 'http://127.0.0.1:8000/'
+    var url = 'https://inflation-calculator-arg-x4iu.onrender.com/'
 
     fetch(url,{                            
         method:'POST',
