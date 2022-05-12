@@ -62,7 +62,7 @@ function send_data(){
 
     var url = 'https://inflation-calculator-arg-x4iu.onrender.com/'
 
-    fetch(url,{                            
+    fetch(url,{mode: 'no-cors'},{                            
         method:'POST',
         headers:{
             'Content-Type':'application/json',                
