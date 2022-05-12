@@ -35,6 +35,12 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+CORS_ALLOW_ALL_ORIGINS = True                         
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS    = [ 'https://inflation-calculator-arg-x4iu.onrender.com/',] 
+CORS_ALLOWED_ORIGIN_REGEXES = [ 'https://inflation-calculator-arg-x4iu.onrender.com/',]
+
+
 
 
 # Application definition
